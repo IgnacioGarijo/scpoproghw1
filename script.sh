@@ -19,7 +19,9 @@ cd ~
 
 # 2. from your home, creating a directory structure: new folder `scpoprogramming`, and inside that folder create folder `hw1`
 # (enter your command below)
-mkdir ~/scpoprogramming/hw1
+mkdir ~/scpoprogramming
+cd scpoprogramming 
+mkdir hw1
 
 # 3. go into that new directory, i.e. into ~/scpoprogramming/hw1
 # (enter your command below)
@@ -84,14 +86,14 @@ awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort |
 
 # 4. redirect (>) the output of your pipeline to a file `outtable.txt` in the current directory
 # (enter your command below: just copy from 3. above and add the redirect)
-awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort | uniq -c > outable.txt
+awk -F '::' '{print $3}' movies.dat | awk '{print split($0, a, "\\|")}' | sort | uniq -c > outtable.txt
 
 # 5. print your table to screen
 echo ""   # don't touch
 echo "here is my table:"   # don't touch
 
 # (enter your command below)
-cat outable.txt
+cat outtable.txt
 
 #### End of your tasks
 # please do not modify the below lines
